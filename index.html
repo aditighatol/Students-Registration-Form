@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Students Registration Form</title>
+</head>
+
+<body>
+    <h3 class="main-title">Student Enrollment Form</h3>
+
+    <!-- User Container -->
+    <section class="userContainer">
+        <div class="myForm">
+            <!-- Username -->
+            <div class="inputContainer">
+                <label for="userName" class="inputLabel">Name</label>
+                <input type="text" id="userName" class="inputField" placeholder="Your Name" required>
+            </div>
+
+            <!-- User Email -->
+            <div class="inputContainer">
+                <label for="userEmail" class="inputLabel">Email</label>
+                <input type="email" id="userEmail" class="inputField" placeholder="Your Email" required>
+            </div>
+
+            <!-- Website -->
+            <div class="inputContainer">
+                <label for="userWebsite" class="inputLabel">Website</label>
+                <input type="url" id="userWebsite" class="inputField" placeholder="Your Website" required>
+            </div>
+
+            <!-- Image -->
+            <div class="inputContainer">
+                <label for="userImg" class="inputLabel">Image URL</label>
+                <input type="url" id="userImg" class="inputField" placeholder="Your Image" required>
+            </div>
+
+            <!-- Skills -->
+            <div class="inputContainer">
+                <label for="userDomain" class="inputLabel">Domain</label>
+                <input type="text" id="userDomain" class="inputField" placeholder="Your Domain" required>
+            </div>
+
+            <!-- Gender -->
+            <div class="inputHolder">
+                <label class="inputLabel" id="genderLabel">Gender</label>
+                <div class="genderContainer">
+                    <ion-icon name="caret-down-circle"></ion-icon>
+                    <select id="genderSelector" class="genderSelector">
+                        <option value="select" selected>Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="btnHolder">
+                <button type="submit" class="submit formBtn">Enroll</button>
+                <button class="clear formBtn">Clear Form</button>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Details Container -->
+    <section class="detailsContainer">
+        <h3 class="sectionTitle">Enrolled Students</h3>
+    </section>
+
+
+
+
+
+
+    <!-- Ion Icons CDN -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

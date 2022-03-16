@@ -1,0 +1,278 @@
+/* Google fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    max-width: 100%;
+}
+
+.main-title {
+    width: 100%;
+    height: 60px;
+    padding: 0.75rem 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color: #123;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+}
+
+.userContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myForm {
+    width: 330px;
+    padding: 0 0.75rem;
+}
+
+.inputContainer {
+    width: 100%;
+    margin: 0.75rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputLabel {
+    width: 100%;
+    margin: 0.3rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #123;
+}
+
+.inputField {
+    width: 100%;
+    height: 32px;
+    padding-left: 0.5rem;
+    transition: 300ms;
+    outline: none;
+    border: none;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #123;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.inputField:focus {
+    box-shadow: inset 0px -3px 0px #123, 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.inputHolder {
+    width: 100%;
+    margin: 0.75rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#genderLabel {
+    width: 30%;
+}
+
+.genderContainer {
+    width: 65%;
+    height: 32px;
+    position: relative;
+}
+
+.genderContainer ion-icon {
+    color: #123;
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    pointer-events: none;
+}
+
+.genderSelector {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #123;
+    border-radius: 0;
+    outline: none;
+    appearance: none;
+    padding-left: 0.75rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #123;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.genderSelector option {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #123;
+}
+
+.btnHolder {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.formBtn {
+    width: 45%;
+    padding: 0.4rem 0;
+    border: 1px solid #123;
+    background-color: #123;
+    outline: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 0.3rem;
+    transition: 300ms;
+}
+
+.formBtn:hover {
+    background-color: white;
+    color: #123;
+}
+
+.detailsContainer {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-top: 65px;
+}
+
+.detailsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.sectionTitle {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #123;
+    margin-bottom: 0.75rem;
+    z-index: 10;
+}
+
+.myDetail {
+    width: 90%;
+    margin: 0.75rem 5%;
+    border: 1px solid #123;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
+
+}
+
+.imgContainer {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.userPic {
+    width: 150px;
+}
+
+.infoContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0 0.5rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.uName {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0.25rem 0;
+}
+
+.uGender,
+.uEmail,
+.uWebsite,
+.uDomain {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0.25rem 0;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .myDetail {
+        width: 60%;
+        margin: 0.75rem 20%;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        height: 100vh;
+        max-height: 100%;
+        display: flex;
+    }
+
+    .userContainer {
+        width: 50%;
+    }
+
+    .detailsContainer {
+        width: 50%;
+    }
+
+    .myDetail {
+        width: 80%;
+        margin: 0.75rem 10%;
+        flex-direction: row;
+    }
+
+    .imgContainer {
+        width: 25%;
+        height: 100%;
+        padding: 0.5rem;
+    }
+
+    .userPic {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .infoContainer {
+        width: 75%;
+        max-width: 100%;
+        padding-right: 1.5rem;
+        overflow-x: scroll;
+    }
+
+    .infoContainer::-webkit-scrollbar {
+        display: none;
+    }
+
+    .infoContainer p {
+        width: 100%;
+    }
+}
